@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="wrap header-wrap">
             <div class="section-left">
@@ -28,39 +29,32 @@
         </div>
     </header>
 
-    <section class="offer">
-        <div class="wrap offer-wrap">
-            <h1 class="offer-title">THE BRAND <br>
-                <span class="offer-title--small">OF LUXERIOUS <span class="offer-title--pink">FASHION</span></span>
-            </h1>
-        </div>
-    </section>
-
-    <section class="categories">
-        <div class="wrap categories-wrap">
-            <div class="categories-item categories-item--women">
-                <p class="categories-sale">30% OFF</p>
-                <p class="categories-name">FOR WOMEN</p>
-            </div>
-            <div class="categories-item categories-item--men">
-                <p class="categories-sale">HOT DEAL</p>
-                <p class="categories-name">FOR MEN</p>
-            </div>
-            <div class="categories-item categories-item--kids">
-                <p class="categories-sale">NEW ARRIVALS</p>
-                <p class="categories-name">FOR KIDS</p>
-            </div>
-            <div class="categories-item categories-item--acc">
-                <p class="categories-sale">LUXIROUS & TRENDY</p>
-                <p class="categories-name">ACCESORIES</p>
-            </div>
+    <section class="pagination">
+        <div class="wrap pagin-wrap">
+            <div class="pagin-title">NEW ARRIVALS </div>
+            <ul class="nav-bar">
+                <li class="nav-bar-item"><a class="nav-bar-item" href="index.html">HOME</a></li>
+                <li class="nav-bar-item">/</li>
+                <li class="nav-bar-item">MEN</li>
+                <li class="nav-bar-item">/</li>
+                <li class="nav-bar-item nav-bar-pink">NEW ARRIVALS</li>
+            </ul>
         </div>
     </section>
 
     <section class="products">
-        <div class="wrap products-wrap">
-            <h2 class="products-title">Fetured Items</h2>
-            <p class="products-info">Shop for items based on what we featured in this week</p>
+        <div class="wrap">
+            <div class="filter">
+                <div class="filter-title">FILTER </div><img src="img/filter-list.svg" alt="list">
+                <ul class="filter-drop">
+                    <li class="filter-item">TRENDING NOW</li>
+                    <li class="filter-item"><img src="img/drop-btn.png" alt="btn"></li>
+                    <li class="filter-item">SIZE</li>
+                    <li class="filter-item"><img src="img/drop-btn.png" alt="btn"></li>
+                    <li class="filter-item">PRICE</li>
+                    <li class="filter-item"><img src="img/drop-btn.png" alt="btn"></li>
+                </ul>
+            </div>
             <ul class="products-list">
                 <li class="products-item"><img src="img/card1.png" width="360" height="420" alt="ellery">
                     <div class="product-text-box">
@@ -70,7 +64,7 @@
                         <p class="product-price">$52.00</p>
                     </div>
                 </li>
-                <li class="products-item"><img src="img/card2.png" width="360" height="420" alt="ellery">
+                <li class="products-item"><img src="img/catalog2.png" width="360" height="420" alt="ellery">
                     <div class="product-text-box">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -78,7 +72,7 @@
                         <p class="product-price">$52.00</p>
                     </div>
                 </li>
-                <li class="products-item"><img src="img/card3.png" width="360" height="420" alt="ellery">
+                <li class="products-item"><img src="img/catalog3.png" width="360" height="420" alt="ellery">
                     <div class="product-text-box">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -86,7 +80,7 @@
                         <p class="product-price">$52.00</p>
                     </div>
                 </li>
-                <li class="products-item"><img src="img/card4.png" width="360" height="420" alt="ellery">
+                <li class="products-item"><img src="img/catalog4.png" width="360" height="420" alt="ellery">
                     <div class="product-text-box">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -94,7 +88,7 @@
                         <p class="product-price">$52.00</p>
                     </div>
                 </li>
-                <li class="products-item"><img src="img/card5.png" width="360" height="420" alt="ellery">
+                <li class="products-item"><img src="img/catalog5.png" width="360" height="420" alt="ellery">
                     <div class="product-text-box">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -102,7 +96,31 @@
                         <p class="product-price">$52.00</p>
                     </div>
                 </li>
-                <li class="products-item"><img src="img/card6.png" width="360" height="420" alt="ellery">
+                <li class="products-item"><img src="img/catalog6.png" width="360" height="420" alt="ellery">
+                    <div class="product-text-box">
+                        <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                        <p class="product-text">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item"><img src="img/catalog7.png" width="360" height="420" alt="ellery">
+                    <div class="product-text-box">
+                        <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                        <p class="product-text">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item"><img src="img/catalog8.png" width="360" height="420" alt="ellery">
+                    <div class="product-text-box">
+                        <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                        <p class="product-text">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item"><img src="img/catalog9.png" width="360" height="420" alt="ellery">
                     <div class="product-text-box">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -111,9 +129,21 @@
                     </div>
                 </li>
             </ul>
-            <div class="all-prod"><button class="product-btn"><a class="product-link" href="catalog.html">Browse All
-                        Products</a></button>
-            </div>
+
+            <nav class="wrap prod-nav">
+                <ul class="prod-list">
+                    <li class="prod-item"><img src="img/arrov-left.png" alt="prev"></li>
+                    <li class="prod-item">1</li>
+                    <li class="prod-item">2</li>
+                    <li class="prod-item">3</li>
+                    <li class="prod-item">4</li>
+                    <li class="prod-item">5</li>
+                    <li class="prod-item">6</li>
+                    <li class="prod-item">...</li>
+                    <li class="prod-item">20</li>
+                    <li class="prod-item"><img src="img/arrow-right.png" alt="next"></li>
+                </ul>
+            </nav>
         </div>
     </section>
 
@@ -170,6 +200,7 @@
             </ul>
         </div>
     </footer>
+
 </body>
 
 </html>
