@@ -1,7 +1,12 @@
 * {
+<<<<<<< Updated upstream
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+=======
+  margin: 0;
+  padding: 0;
+>>>>>>> Stashed changes
 }
 
 body {
@@ -28,6 +33,30 @@ body {
 
 .nav {
     margin-left: 41px;
+}
+
+.nav-btn {
+  fill: #f8f8f8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.nav-btn:hover {
+  fill: #F16D7F;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.nav-logo {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.nav-logo:hover {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .offer {
@@ -151,10 +180,76 @@ body {
 }
 
 .products-item {
+<<<<<<< Updated upstream
     background-color: #f8f8f8;
     width: 360px;
     padding-bottom: 10px;
     margin-bottom: 30px;
+=======
+  background-color: #f8f8f8;
+  width: 360px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.products-overlay {
+  background-color: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.products-item:hover .products-overlay {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.btn-add {
+  font-family: inherit;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+  padding: 13px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.btn-add:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.product-item-link {
+  text-decoration: none;
+>>>>>>> Stashed changes
 }
 
 .product-name {
@@ -183,6 +278,7 @@ body {
 }
 
 .product-link {
+<<<<<<< Updated upstream
     text-decoration: none;
     border: 1px solid #F26376;
     background: none;
@@ -190,6 +286,17 @@ body {
     font-size: 16px;
     line-height: 19px;
     padding: 15px 39px;
+=======
+  text-decoration: none;
+  border: 1px solid #F26376;
+  background: none;
+  color: #F26376;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 15px 39px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+>>>>>>> Stashed changes
 }
 
 .product-link:hover {
@@ -228,6 +335,132 @@ body {
     line-height: 17px;
     color: #FBFBFB;
     margin-top: 16px;
+}
+
+.features-item {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.features-item:hover .features-car {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+.features-item:hover .features-percent {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.features-item:hover .bounce-in-bck {
+  -webkit-animation: bounce-in-bck 1.1s both;
+  animation: bounce-in-bck 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-bck {
+  0% {
+    -webkit-transform: scale(7);
+    transform: scale(7);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(1.24);
+    transform: scale(1.24);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bounce-in-bck {
+  0% {
+    -webkit-transform: scale(7);
+    transform: scale(7);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(1.24);
+    transform: scale(1.24);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }
 
 .subscribe {
@@ -282,6 +515,7 @@ body {
 }
 
 .form-field {
+<<<<<<< Updated upstream
     width: 256px;
     height: 49px;
     padding: 7px 64px 6px 22px;
@@ -289,15 +523,43 @@ body {
     background-color: #E1E1E1;
     border: none;
     border-radius: 25px 0 0 25px;
+=======
+  width: 256px;
+  height: 49px;
+  padding: 0px 0px 0px 22px;
+  color: #222224;
+  background-color: #E1E1E1;
+  border: none;
+  border-radius: 25px 0 0 25px;
+>>>>>>> Stashed changes
+}
+
+.form-field:hover {
+  border: 1px solid black;
 }
 
 .form-btn {
+<<<<<<< Updated upstream
     width: 100px;
     height: 49px;
     color: #fff;
     background-color:#F16D7F;
     border: none;
     border-radius: 0 25px 25px 0;
+=======
+  width: 100px;
+  height: 49px;
+  color: #fff;
+  background-color: #F16D7F;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.form-btn:hover {
+  background-color: #E05C6E;
+>>>>>>> Stashed changes
 }
 
 footer {
@@ -327,6 +589,7 @@ footer {
 }
 
 .sochial-link {
+<<<<<<< Updated upstream
     background-color: #fff;
     color: #000000;
     text-decoration: none;
@@ -335,6 +598,24 @@ footer {
     align-items: center;
     width: 32px;
     height: 32px;
+=======
+  background-color: #fff;
+  color: #000000;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+>>>>>>> Stashed changes
 }
 .sochial-link:hover {
     background-color: #F16D7F;
@@ -358,6 +639,7 @@ footer {
 }
 
 .breadcrumbs-list {
+<<<<<<< Updated upstream
     list-style: none;
     margin: 0;
     padding: 0;
@@ -393,6 +675,46 @@ footer {
     text-decoration: underline;
     color: #F16D7F;
   }
+=======
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.breadcrumbs-item::before {
+  content: '/';
+  margin-right: 10px;
+}
+
+.breadcrumbs-item:first-child::before {
+  display: none;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.breadcrumbs-link--current {
+  font-weight: bold;
+  color: #F16D7F;
+}
+
+.breadcrumbs-link:hover {
+  text-decoration: underline;
+  color: #F16D7F;
+}
+>>>>>>> Stashed changes
 
 .filter {
     display: flex;
@@ -420,11 +742,29 @@ footer {
     color: #6F6E6E;
 }
 
+.filter-item:hover {
+  color: #F16D7F;
+  cursor: pointer;
+}
+
 .filter-item .fa-angle-down {
+<<<<<<< Updated upstream
     margin-left: 10px;
     margin-right: 28px;
 } 
 
+=======
+  margin-left: 10px;
+  margin-right: 28px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.filter-item:hover .fa-angle-down {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+>>>>>>> Stashed changes
 
 .pagination {
     display: flex;
@@ -441,8 +781,258 @@ footer {
 }
 
 .pagination-item {
+<<<<<<< Updated upstream
     margin-right: 18px;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
 }
+=======
+  margin-right: 18px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.pagination-btn {
+  border: none;
+  background: transparent;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6F6E6E;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.pagination-btn:hover {
+  color: #F16D7F;
+}
+
+.product-present {
+  height: 777px;
+  background-color: #F7F7F7;
+}
+
+.product-present-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-arrow {
+  width: 47px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(42, 42, 42, 0.15);
+}
+
+.left-arrow:hover {
+  width: 67px;
+  height: 67px;
+}
+
+.product-img {
+  height: 724px;
+}
+
+.right-arrow {
+  width: 47px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(42, 42, 42, 0.15);
+}
+
+.right-arrow:hover {
+  width: 67px;
+  height: 67px;
+}
+
+.arrow-btn {
+  border: none;
+  background: transparent;
+  padding: 47px;
+}
+
+.arrow-btn:hover {
+  fill: #F16D7F;
+}
+
+.collection-description {
+  background-color: #FFFFFF;
+}
+
+.collection-description-wrap {
+  border: 1px solid #EAEAEA;
+  width: 1141px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.description-header {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pink-line {
+  width: 63px;
+  height: 3px;
+  background-color: #EF5B70;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.description-title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.description {
+  width: 555px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+.description-price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.description-border {
+  width: 641px;
+  border: 1px solid #EAEAEA;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.description-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 49px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.description-drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.description-item {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.description-item .fa-angle-down {
+  margin-left: 10px;
+  margin-right: 28px;
+}
+
+.description-cart {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  fill: #F16D7F;
+}
+
+.description-btn {
+  text-decoration: none;
+  border: 1px solid #F26376;
+  background: none;
+  color: #F26376;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 15px 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 23px;
+  fill: #F16D7F;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.description-btn:hover {
+  background-color: #F16D7F;
+  color: #fff;
+  fill: #fff;
+}
+
+.products-card {
+  margin-top: 728px;
+  margin-bottom: 128px;
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> Stashed changes
