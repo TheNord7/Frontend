@@ -27,8 +27,45 @@
     position: relative;
   }
   
+  .section-left {
+    display: flex;
+    gap: 41px;
+    
+  }
+
   .nav {
-    margin-left: 41px;
+
+    &-search {
+      margin-top: 10px;
+    }
+    
+    &-menu {
+      margin-top: 4px;
+    }
+  }
+
+  .section-right {
+    display: flex;
+    gap: 33px;
+  }
+
+  .cart-icon {
+    position: relative;
+  }
+
+  .cart-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F16D7F;
+    color: #fff;
+    font-size: 12px;
   }
 
   .drop-menu {
@@ -38,11 +75,11 @@
     transform: scale(0);
     transform-origin: top;
     transition-duration: 0.5s;
-    margin-top: 23px;
-    margin-left: 230px;
+    margin-top: 25px;
     padding-top: 37px;
     padding-left: 34px;
     padding-bottom: 157px;
+    z-index: 1;
   }
 
   .drop-menu-title {
@@ -72,7 +109,7 @@
     list-style: none;
   }
 
-  .nav:hover .drop-menu {
+  .nav-menu:hover .drop-menu {
     transform: scale(1);
   }
   
@@ -115,7 +152,7 @@
     color: #222222;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
-    margin-right: 90px;
+    margin-right: 100px;
   }
   
   .offer-title--small {
@@ -471,7 +508,6 @@
   }
   
   .subscribe {
-    height: 448px;
     background-image: url(../img/subscribe-bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -481,7 +517,7 @@
   
   .subscribe-wrap {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   .subscribe-info {
@@ -490,6 +526,7 @@
     align-items: center;
     width: 360px;
     text-align: center;
+    margin-bottom: 94px;
   }
   
   .subscribe-text {
@@ -509,6 +546,8 @@
   
   .email-form {
     text-align: center;
+    padding-top: 70px;
+    padding-right: 90px;
   }
   
   .subscribe-form {
@@ -521,7 +560,7 @@
   .form-field {
     width: 256px;
     height: 49px;
-    padding: 0px 0px 0px 22px;
+    padding: 0px 22px 0px 22px;
     color: #222224;
     background-color: #E1E1E1;
     border: none;
@@ -687,6 +726,13 @@
     line-height: 17px;
     color: #6F6E6E;
     margin-bottom: 6px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+
+  .filter-drop-item:hover {
+    color: #F16D7F;
+    transform: translateX(5px);
   }
 
   .category-drop {
@@ -758,8 +804,8 @@
   .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 49px;
-    margin-bottom: 109px;
+    margin-top: 19px;
+    margin-bottom: 96px;
   }
   
   .pagination-list {
@@ -845,10 +891,6 @@
   
   .arrow-btn:hover {
     fill: #F16D7F;
-  }
-  
-  .collection-description {
-    background-color: #FFFFFF;
   }
   
   .collection-description-wrap {
@@ -983,10 +1025,11 @@
 
   .shop-list-wrap {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .shop-item {
+    width: 652px;
     margin-top: 56px;
     margin-bottom: 128px;
   }
@@ -1088,8 +1131,8 @@
     border: 1px solid #A4A4A4;
     margin-bottom: 21px;
     width: 344px;
-    padding-top: 12px;
-    padding-left: 16px;
+    padding: 12px 16px;
+    
     padding-bottom: 15px;
     font-weight: 300;
     font-size: 13px;

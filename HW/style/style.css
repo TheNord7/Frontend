@@ -32,8 +32,51 @@ body {
   position: relative;
 }
 
-.nav {
-  margin-left: 41px;
+.section-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 41px;
+}
+
+.nav-search {
+  margin-top: 10px;
+}
+
+.nav-menu {
+  margin-top: 4px;
+}
+
+.section-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 33px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-number {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F16D7F;
+  color: #fff;
+  font-size: 12px;
 }
 
 .drop-menu {
@@ -46,11 +89,11 @@ body {
           transform-origin: top;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  margin-top: 23px;
-  margin-left: 230px;
+  margin-top: 25px;
   padding-top: 37px;
   padding-left: 34px;
   padding-bottom: 157px;
+  z-index: 1;
 }
 
 .drop-menu-title {
@@ -80,7 +123,7 @@ body {
   list-style: none;
 }
 
-.nav:hover .drop-menu {
+.nav-menu:hover .drop-menu {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -135,7 +178,7 @@ body {
   color: #222222;
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
-  margin-right: 90px;
+  margin-right: 100px;
 }
 
 .offer-title--small {
@@ -330,18 +373,6 @@ body {
 .btn-add:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
-}
-
-.cart-link-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  color: #FFFFFF;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 11px;
 }
 
 .product-item-link {
@@ -560,7 +591,6 @@ body {
 }
 
 .subscribe {
-  height: 448px;
   background-image: url(../img/subscribe-bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -572,8 +602,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .subscribe-info {
@@ -589,6 +620,7 @@ body {
           align-items: center;
   width: 360px;
   text-align: center;
+  margin-bottom: 94px;
 }
 
 .subscribe-text {
@@ -608,6 +640,8 @@ body {
 
 .email-form {
   text-align: center;
+  padding-top: 70px;
+  padding-right: 90px;
 }
 
 .subscribe-form {
@@ -626,7 +660,7 @@ body {
 .form-field {
   width: 256px;
   height: 49px;
-  padding: 0px 0px 0px 22px;
+  padding: 0px 22px 0px 22px;
   color: #222224;
   background-color: #E1E1E1;
   border: none;
@@ -824,6 +858,15 @@ footer {
   line-height: 17px;
   color: #6F6E6E;
   margin-bottom: 6px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.filter-drop-item:hover {
+  color: #F16D7F;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .category-drop {
@@ -905,8 +948,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 49px;
-  margin-bottom: 109px;
+  margin-top: 19px;
+  margin-bottom: 96px;
 }
 
 .pagination-list {
@@ -1015,10 +1058,6 @@ footer {
 
 .arrow-btn:hover {
   fill: #F16D7F;
-}
-
-.collection-description {
-  background-color: #FFFFFF;
 }
 
 .collection-description-wrap {
@@ -1187,11 +1226,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .shop-item {
+  width: 652px;
   margin-top: 56px;
   margin-bottom: 128px;
 }
@@ -1307,8 +1348,7 @@ footer {
   border: 1px solid #A4A4A4;
   margin-bottom: 21px;
   width: 344px;
-  padding-top: 12px;
-  padding-left: 16px;
+  padding: 12px 16px;
   padding-bottom: 15px;
   font-weight: 300;
   font-size: 13px;
