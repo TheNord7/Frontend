@@ -3,8 +3,22 @@
   padding: 0;
 }
 
-body {
+html, body {
   font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .header {
@@ -665,7 +679,7 @@ body {
   padding: 0px 22px 0px 22px;
   color: #222224;
   background-color: #E1E1E1;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 25px 0 0 25px;
 }
 
@@ -893,6 +907,14 @@ footer {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-title-drop:hover {
+  color: #F16D7F;
+  fill: #F16D7F;
 }
 
 .filter-item {
@@ -903,6 +925,8 @@ footer {
 }
 
 .size-drop {
+  font-size: 12px;
+  line-height: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1055,7 +1079,6 @@ footer {
 .arrow-btn {
   border: none;
   background: transparent;
-  padding: 47px;
 }
 
 .arrow-btn:hover {
@@ -1064,7 +1087,6 @@ footer {
 
 .collection-description-wrap {
   border: 1px solid #EAEAEA;
-  width: 1141px;
   padding-top: 64px;
   padding-bottom: 64px;
   display: -webkit-box;
@@ -1748,10 +1770,13 @@ footer {
 
 @media (max-width: 797px) {
   .wrap {
-    max-width: calc(400px - 16px * 2);
+    max-width: calc(375px - 16px * 2);
   }
   .hide {
     display: none;
+  }
+  .drop-menu {
+    margin-left: -220px;
   }
   .cart-icon {
     display: none;
@@ -1850,8 +1875,7 @@ footer {
     line-height: 14px;
   }
   .filter-item .fa-angle-down {
-    margin-right: 22px;
-    margin-left: 9px;
+    margin-right: 13px;
   }
   .product-img {
     height: 454px;
@@ -1921,6 +1945,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .form-description-header {
     margin-top: 40px;

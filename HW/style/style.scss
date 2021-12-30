@@ -3,8 +3,15 @@
     padding: 0;
   }
   
-  body {
+  html, body {
     font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    flex-grow: 1;
   }
   
   .header {
@@ -566,7 +573,7 @@
     padding: 0px 22px 0px 22px;
     color: #222224;
     background-color: #E1E1E1;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 25px 0 0 25px;
   }
   
@@ -691,6 +698,8 @@
     margin-bottom: 65px;
     position: relative;
   }
+
+  
   
   .filter-title {
     font-weight: 600;
@@ -701,6 +710,7 @@
 
   .filter-title:hover {
     color: #F16D7F;
+    
   }
   
   .filter-drop {
@@ -755,6 +765,12 @@
     gap: 11px;
     display: flex;
     cursor: pointer;
+    align-items: center;
+  }
+
+  .filter-title-drop:hover {
+    color: #F16D7F;
+    fill: #F16D7F;
   }
 
   .filter-item {
@@ -765,6 +781,8 @@
   }
 
   .size-drop {
+    font-size: 12px;
+    line-height: 14px;
     display: flex;
     cursor: pointer;
   }
@@ -854,8 +872,6 @@
 
   }
 
-  
-  
   .left-arrow {
     width: 47px;
     height: 47px;
@@ -889,7 +905,6 @@
   .arrow-btn {
     border: none;
     background: transparent;
-    padding: 47px;
   }
   
   .arrow-btn:hover {
@@ -898,7 +913,6 @@
   
   .collection-description-wrap {
     border: 1px solid #EAEAEA;
-    width: 1141px;
     padding-top: 64px;
     padding-bottom: 64px;
     display: flex;
@@ -1504,12 +1518,16 @@
 
   @media (max-width: 797px) {
     .wrap {
-      max-width: calc(420px - 16px * 2);
+      max-width: calc(375px - 16px * 2);
       // outline: 1px solid purple;
     }
 
     .hide {
       display: none;
+    }
+
+    .drop-menu {
+      margin-left: -220px;
     }
 
     .cart-icon {
@@ -1617,8 +1635,7 @@
     }
 
     .filter-item .fa-angle-down {
-      margin-right: 22px;
-      margin-left: 9px;
+      margin-right: 13px;
     }
 
     .product-img {
@@ -1696,6 +1713,7 @@
 
     .registration-wrap {
       flex-direction: column;
+      align-items: center;
     }
 
     .form-description-header {
